@@ -6,6 +6,82 @@
     
   <title>TARIT Advertising & Printing</title>
   <link rel="stylesheet" href="style.css">
+<style>
+    /* Sidebar menu */
+nav {
+  background: #b00;        /* red background */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;      /* remove fixed/absolute */
+  height: auto;
+}
+
+/* Navigation links */
+nav a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;  /* stack brand + menu */
+    align-items: center;
+  }
+  nav {
+    width: 100%;             /* full width */
+    align-items: center;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #FFD700;
+  padding: 15px 20px;
+}
+
+/* Left side: brand */
+header .brand {
+  flex: 1;   /* equal part */
+}
+
+/* Right side: nav */
+header nav {
+  flex: 1;   /* equal part */
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;   /* stack vertically */
+    text-align: center;
+  }
+  header .brand, header nav {
+    flex: unset;              /* remove equal division */
+    width: 100%;              /* full width */
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background: #b00;         /* red background */
+    padding: 10px;
+  }
+}
+
+
+  </style>
 </head>
 <body>
 
