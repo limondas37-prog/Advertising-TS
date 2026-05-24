@@ -102,14 +102,16 @@ header nav {
 }
 </style>
 
+
   <div class="header-left">
     <img src="images/logo.png" alt="TARIT Logo" class="logo">
   </div>
   <div class="header-center">
-    <h1><span class="brand-name">TARIT</span> <span class="white"> Advertising & Printing</span></h1>
+    <h1><span class="brand-name">TARIT</span> <span class="white">Advertising & Printing</span></h1>
   </div>
   <div class="header-right">
-    <nav>
+    <div class="menu-toggle">&#9776;</div> <!-- hamburger icon -->
+    <nav class="nav-links">
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#works">Our Works</a>
@@ -117,6 +119,9 @@ header nav {
       <a href="#contact">Contact</a>
     </nav>
   </div>
+
+
+  
 </header>
 
 
@@ -409,5 +414,13 @@ header nav {
     <p>&copy; 2026 TARIT Advertising & Printing. All rights reserved.</p>
   </footer>
  <script src="script.js"></script>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+
 </body>
 </html>
