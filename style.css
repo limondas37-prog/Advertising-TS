@@ -60,7 +60,7 @@ header {
 }
 
 .brand-name {
-  font-size: 3em;          /* bigger size */
+  font-size: 1em;          /* bigger size */
   font-weight: bold;       /* bold letters */
   color: #FFD700;          /* golden color */
   letter-spacing: 3px;     /* spacing between letters */
@@ -442,3 +442,31 @@ footer {
   padding: 20px;
   margin-top: 0px;
 }
+
+/* Desktop default */
+.brand-name {
+  font-size: 5em;
+  font-weight: 900;
+  color: #FFD700;
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 12px rgba(255,215,0,0.7);
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  nav a {
+    font-size: 1.2em;
+  }
+}
+
