@@ -331,3 +331,80 @@ footer {
     background: #fff; /* or whatever you want */
   }
 }
+
+
+/* Desktop nav */
+nav {
+  display: flex;
+  gap: 20px;
+  background: #000;
+}
+nav a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  nav {
+    display: none; /* hide default nav */
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 2em;
+    color: #FFD700;
+    cursor: pointer;
+  }
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    padding: 10px;
+  }
+  .mobile-nav a {
+    color: #FFD700;
+    padding: 10px;
+    text-align: center;
+  }
+  .mobile-nav.show {
+    display: flex; /* show when toggled */
+  }
+}
+
+
+/* Desktop nav */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  color: #FFD700;
+  cursor: pointer;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide by default */
+    flex-direction: column;
+    background: #000;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .nav-links.show {
+    display: flex; /* show when toggled */
+  }
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+  .nav-links a {
+    color: #FFD700;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
