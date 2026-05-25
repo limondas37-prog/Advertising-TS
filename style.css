@@ -385,26 +385,25 @@ nav a {
   cursor: pointer;
 }
 
-/* Mobile nav */
+
+
 @media (max-width: 768px) {
-  .nav-links {
-    display: none; /* hide by default */
-    flex-direction: column;
-    background: #000;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-  .nav-links.show {
-    display: flex; /* show when toggled */
+  header {
+    flex-direction: row; /* logo + company name + hamburger in one line */
+    justify-content: space-between;
+    align-items: center;
   }
   .menu-toggle {
     display: block; /* show hamburger */
   }
-  .nav-links a {
-    color: #FFD700;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
+  .nav-links {
+    display: none; /* hide menu links */
+  }
+  .nav-links.show {
+    display: flex; /* show when toggled */
+    flex-direction: column;
+    background: #000;
+    width: 100%;
+    text-align: center;
   }
 }
